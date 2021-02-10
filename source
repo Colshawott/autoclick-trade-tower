@@ -1,4 +1,4 @@
-local function(click)
+
 while true do
     wait()
 
