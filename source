@@ -1,0 +1,15 @@
+local function(click)
+while true do
+    wait()
+
+game:GetService("ReplicatedStorage").Events.Click:FireServer()
+
+end
+while wait(1) do
+local args = {
+    [1] = "AcceptRequest",
+    [2] = "nibbuh_feels"
+}
+
+game:GetService("ReplicatedStorage").Events.TradeActions:InvokeServer(unpack(args))
+end
